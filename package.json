@@ -1,0 +1,27 @@
+{
+  "name": "markdown-it-yaml-header",
+  "version": "1.0.0",
+  "description": "markdown-it plugin to render github like yaml header",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kat0h/markdown-it-yaml-header.git"
+  },
+  "keywords": [
+    "markdown-it"
+  ],
+  "author": "kota kato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kat0h/markdown-it-yaml-header/issues"
+  },
+  "homepage": "https://github.com/kat0h/markdown-it-yaml-header#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "jsdom": "^18.1.0",
+    "markdown-it": "^12.2.0"
+  }
+}
