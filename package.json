@@ -4,7 +4,7 @@
   "description": "markdown-it plugin to render github like yaml header",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./index.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
   "homepage": "https://github.com/kat0h/markdown-it-yaml-header#readme",
   "dependencies": {
     "js-yaml": "^4.1.0",
-    "jsdom": "^18.1.0",
+    "jsdom": "^18.1.0"
+  },
+  "devDependencies": {
     "markdown-it": "^12.2.0"
   }
 }
