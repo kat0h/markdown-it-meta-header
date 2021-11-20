@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-meta-header",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "markdown-it plugin to render github like yaml header",
   "main": "index.js",
   "scripts": {
