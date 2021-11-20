@@ -5,7 +5,7 @@
 
 ![](https://user-images.githubusercontent.com/45391880/141127221-b483acd7-8fad-461f-b943-58a419ff5901.png)
 
-## How to use
+## Usage
 
 ```
 npm i markdown-it
