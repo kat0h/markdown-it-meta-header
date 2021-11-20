@@ -99,9 +99,9 @@ function meta_render(tokens, idx, _, _, _) {
   return make_table(JSON.parse(tokens[idx].content)).outerHTML
 }
 
-function MarkdownItYamlHeader(md) {
+function MarkdownItMetaHeader(md) {
   md.block.ruler.before('code', 'meta', meta_parse)
   md.renderer.rules.meta = meta_render
 }
 
-module.exports = MarkdownItYamlHeader
+module.exports = MarkdownItMetaHeader

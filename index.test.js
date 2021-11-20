@@ -1,10 +1,10 @@
 const assert = require("assert")
 
 const MarkdownIt = require("markdown-it")
-const MarkdownItYamlHeader = require("./index")
+const MarkdownItMetaHeader = require("./index")
 
 const md = new MarkdownIt()
-md.use(MarkdownItYamlHeader)
+md.use(MarkdownItMetaHeader)
 
 // case 1
 const input = "---\n1: 2\n3: 4\n5:\n  - 6\n  - 7\n8:\n  - 9: 10\n  - [ 11, 12, 13 ]\n---\n"
