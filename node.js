@@ -1,3 +1,4 @@
+'use strict';
 class Node {
   constructor(element = []) {
     this.n = element

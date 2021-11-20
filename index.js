@@ -1,9 +1,10 @@
+'use strict';
 const YAML = require("js-yaml")
 const Node = require("./node")
 
 // this code is licenced under MIT
 // https://github.com/CaliStyle/markdown-it-meta
-function meta_parse(state, start, end, _) {
+function meta_parse(state, start, end) {
   function get(state, line) {
     const pos = state.bMarks[line]
     const max = state.eMarks[line]
@@ -44,9 +45,9 @@ function meta_parse(state, start, end, _) {
   return true
 }
 
-function meta_render(tokens, idx, _, _, _) {
+function meta_render(tokens, idx) {
   function make_table(data) {
-    doc = new Node()
+    var doc = new Node()
     var isObject = function (o) {
       return (o instanceof Object && !(o instanceof Array)) ? true : false;
     };
