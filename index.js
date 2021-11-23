@@ -38,7 +38,7 @@ function meta_parse(state, start, end) {
     var yaml = YAML.load(data.join('\n'), {json: true})
   } catch (_) {}
   var token = state.push('meta', '', 0)
-  token.content = JSON.stringify(yaml)
+  token.content = yaml
   token.map = [startLine, state.line]
   token.children = [];
   state.line = line + 1
@@ -92,12 +92,15 @@ function meta_render(tokens, idx) {
       var ret = doc.createElement("table")
       ret.appendChild(tbody)
       return ret
+    } else if (data == undefined) {
+      // データが無いとき
+      return doc.createTextNode("")
     } else {
       // ただのデータ
       return doc.createElement("td").appendChild(doc.createTextNode(data))
     }
   }
-  return make_table(JSON.parse(tokens[idx].content)).outerHTML
+  return make_table(tokens[idx].content).outerHTML
 }
 
 function MarkdownItMetaHeader(md) {

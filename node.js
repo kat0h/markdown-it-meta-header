@@ -27,7 +27,8 @@ class Node {
     return this.n
   }
   get outerHTML() {
-    return this.n.join("")
+    const ret = this.n.join("")
+    return ret !== undefined ? ret : ""
   }
 }
 

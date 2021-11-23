@@ -4,7 +4,7 @@
   "description": "markdown-it plugin to render github like yaml header",
   "main": "index.js",
   "scripts": {
-    "test": "node ./index.test.js"
+    "test": "node ./test.js"
   },
   "repository": {
     "type": "git",
